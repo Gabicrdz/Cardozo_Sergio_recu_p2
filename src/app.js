@@ -74,7 +74,7 @@ app.put("/students/:id", (req, res)=> {
 })
 
 
-app.delete("/products/:id", (req, res)=> {
+app.delete("/students/:id", (req, res)=> {
     const buscarId = parseInt(req.params.id)
     const studentIndex = dbStudents.findIndex((e) => e.id === buscarId)
 
